@@ -10,7 +10,7 @@ cd mysql-5.7.9-win32
 "bin/mysqld" --initialize-insecure --user=mysql --log_syslog=0
 
 :: Setup WebJob
-mkdir D:\home\site\wwwroot\App_Data\jobs\continuous\mysqld
+SET WEBJOB_PATH=%WEBROOT_PATH%\App_Data\jobs\continuous\mysqld
 
-copy /Y ..\run.sh D:\home\site\wwwroot\App_Data\jobs\continuous\mysqld\run.sh
-copy /Y ..\settings.job D:\home\site\wwwroot\App_Data\jobs\continuous\mysqld\settings.job
+mkdir %WEBJOB_PATH%
+xcopy webjob %WEBJOB_PATH% /E /C
