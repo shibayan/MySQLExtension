@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>mysql</id>
+        <title>MySQL</title>
+        <version>5.7.9.0</version>
+        <authors>shibayan</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Local MySQL for Azure Web Apps</description>
+        <tags>mysql</tags>
+    </metadata>
+    <files>
+        <file src="**" target="content" />
+    </files>
+</package>
