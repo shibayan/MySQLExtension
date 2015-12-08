@@ -7,11 +7,11 @@ echo "Starting mysqld"
 
 while [ ! -e "$WEBJOBS_SHUTDOWN_FILE" ]
 do
-  sleep 5
+  sleep 1
 done
 
-"bin/mysqladmin" shutdown -u root
+"bin/mysqladmin" shutdown -u root 2>/dev/null
 
-sleep 5
+wait
 
 echo "Shutdown mysqld"
