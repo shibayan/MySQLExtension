@@ -3,7 +3,7 @@
     <metadata>
         <id>mysql</id>
         <title>MySQL</title>
-        <version>5.7.9.0</version>
+        <version>5.7.9.4</version>
         <authors>shibayan</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Local MySQL for Azure Web Apps</description>
