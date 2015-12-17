@@ -1,16 +1,16 @@
 
-cd "D:/home/SiteExtensions/mysql/mysql-5.7.9-win32"
+cd "D:/Program Files (x86)/mysql/5.7.9.0/bin"
 
 echo "Starting mysqld"
 
-"bin/mysqld" --standalone --log_syslog=0 &
+mysqld --defaults-file=d:/home/SiteExtensions/mysql/my.ini --standalone --log_syslog=0 &
 
 while [ ! -e "$WEBJOBS_SHUTDOWN_FILE" ]
 do
   sleep 1
 done
 
-"bin/mysqladmin" shutdown -u root 2>/dev/null
+mysqladmin --defaults-file=d:/home/SiteExtensions/mysql/my.ini shutdown -u root 2>/dev/null
 
 wait
 
