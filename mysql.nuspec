@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>mysql</id>
-        <title>MySQL</title>
-        <version>5.7.9.6</version>
+        <title>Local MySQL</title>
+        <version>5.7.9.7</version>
         <authors>shibayan</authors>
         <licenseUrl>https://github.com/shibayan/MySQLExtension/blob/master/LICENSE</licenseUrl>
         <projectUrl>https://github.com/shibayan/MySQLExtension</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Local MySQL for Azure Web Apps</description>
+        <description>[Experimental] Enable local MySQL for Azure Web Apps. !!Note!! that this is experimental solution.</description>
         <tags>mysql</tags>
     </metadata>
     <files>
